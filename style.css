@@ -6,11 +6,16 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ol, ul, li, article, a
     font-family: sans-serif;
 	vertical-align: baseline;
     text-decoration: none;
-    font-weight: 600;
+    color: #000;
+    font-weight: 500;
+    list-style: none;
+}
+h1, h2, h3{
+    font-weight: bold;
 }
 
 body{
-    background-color: tomato;
+    /* background-color: tomato; */
 }
 
 .cabecalho{
@@ -18,18 +23,19 @@ body{
     padding: 0;
     width: 100%;
     height: 58px;
+    font-weight: 600;
     background: #FFFFFF;
     box-shadow: 0px 13px 20px -20px;
 }
 
 main{
     max-width: 1300px;
+    margin: 0 auto;
     display: flex;
     /* background-color: blue; */
 }
 
 .container{
-    max-width: ;
     margin: 0 2.5%;
     padding: 1em;
     display: flex;
@@ -43,11 +49,12 @@ main{
 .card{
     height: 343px;
     width: 287px;
+    padding: 1%;
     border-radius: 8px;
     display: flex;
     flex-flow: row wrap;
     background-color: #FFFFFF;
-    box-shadow: 0px 15px 15px -20px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, .5);
     border-radius: 8px;
 }
 
@@ -55,25 +62,78 @@ main{
     height: 175px;
     width: 286px;
     border-radius: 8px;
-    background-color: yellow;
 }
 
-.recentes{
+.card h2{
+    font-weight: 600;
+}
+
+.card .categoria{
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.card .categoria{
+    margin: 2%;
+}
+
+.card .categoria a{
+    padding: 1%;
+    border-radius: 8px;
+    color: #343A40;
+    background: #F6F6F6;
+}
+
+.card:hover{
+    box-shadow: 0px 15px 30px 0px rgba(56, 56, 56, 0.5);
+}
+
+.recentes, .populares{
     padding: 1em;
     max-height: 40%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     gap: 10px;
     background-color: #FFFFFF;
-    box-shadow: 0px 15px 15px -20px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, .5);
     border-radius: 8px;
-    background-color: yellowgreen;
 }
-
 
 .mini-card{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+footer{
+    margin: 8% 0 0 0;
+    width: 100%;
+    background: #0D0D0E;
+}
+
+.rodape{
+    margin: 0 auto;
+    max-width: 1300px;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape .nome, .nome h2{
+    display: flex;
+    color: #F3F4F5;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rodape .social ol{
+    margin: 10%;
+    padding: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rodape .social ol li{
+    padding: 10%;
 }
